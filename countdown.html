@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdowm Clock</title>
+    <style>
+            *{
+              box-sizing: border-box;
+              margin:0;
+              padding:0;
+            }
+            audio{
+                visibility:hidden;
+            }
+            body{
+              background-image: linear-gradient(to right ,black,grey,black);
+              display: flex;
+              flex-direction: column;
+              gap:2vw;
+              justify-content: center;
+              align-items: center;
+              padding:5vw;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            h1{
+              /* border:2px solid black; */
+              background-color: pink;
+              width:60%;
+              text-align:center;
+              background-image: linear-gradient(lightpink,lightyellow);
+                
+            }
+            section{
+              display:flex;
+              justify-content:center;
+              align-items: center;
+              gap:4vw;
+              /* border:2px solid black; */
+              background-color: pink;
+              width:60%;
+              padding:5vw;
+              text-align:center; 
+              background-image: linear-gradient(lightpink,lightyellow);
+              
+            }
+            div,button{
+              font-size: 1.5vw;
+            }
+            button{
+              padding:1vw;
+            }
+             button:hover{
+              cursor: pointer;
+             }
+        
+
+    </style>
+    
+</head>
+<body>
+
+    <h1>Countdown</h1>
+    <section id="first" class="countdown-container">
+  
+        <div class="days-container">
+          <div class="days" contenteditable="true">00</div>
+          <div class="days-label">days</div>
+        </div>
+        
+        <div class="hours-container">
+          <div class="hours" contenteditable="true">00</div>
+          <div class="hours-label">hours</div>
+        </div>
+        
+        <div class="minutes-container">
+          <div class="minutes" contenteditable="true">00</div>
+          <div class="minutes-label">minutes</div>
+        </div>
+        
+        <div class="seconds-container">
+          <div class="seconds" contenteditable="true">00</div>
+          <div class="seconds-label">seconds</div>
+        </div>
+
+        <button id="start-button">start</button>
+        <button id="cancel-button">cancel </button>
+        <audio autoplay></audio>
+      </section>
+      <script src="countdown.js"></script>
+</body>
+</html>

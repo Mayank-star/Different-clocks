@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+               body{
+                
+                    background-color: lightsteelblue;
+                    /* border:5px solid black; */
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10vw;
+
+               }
+               section{
+
+                  align-self: center;
+                  /* border:5px solid orange; */
+                  background-color: burlywood;
+                  padding:5vw;
+                  border-radius: 6vw;
+
+               }
+
+               article{
+                        /* border:5px solid orange; */
+                        background-color: burlywood;
+                        padding: 2vw;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        gap:1vw;
+                       
+               }
+               p{
+                      display: inline-block;  
+                      font-size:3vw; 
+               }
+               span{
+                     display: inline-block;
+                     font-size: 4vw;
+               }
+               #slot{
+                         font-weight: bold;
+                         color:red
+               }
+    </style>
+</head>
+<body>
+       
+      <section>
+        <article>
+
+            <span>00</span><p>:hours</p>
+            <span>00</span><p>:minutes</p>
+            <span>00</span><p>:seconds</p><p id="slot">AM</p>
+
+        
+        </article>
+      </section>
+
+
+
+    <script src="clock.js"></script>
+</body>
+</html>

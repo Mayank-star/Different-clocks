@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Clock</title>
+     <style>
+            *{
+               box-sizing: border-box;
+               margin:0px;
+               padding:0px;
+
+            }
+            body{ 
+              /* background-color: antiquewhite; */
+              background-image: url(images/stopwatchbc.avif);
+              background-repeat: no-repeat;
+              background-size: cover;
+              display: flex;
+              flex-direction: column;
+              gap:2vw;
+              justify-content: center;
+              align-items: center;
+              padding:5vw;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            div{
+              /* background-color: antiquewhite; */
+              display: flex;
+              flex-direction: row;
+              gap:2vw;
+              justify-content: center;
+              align-items: center;
+              padding:5vw;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-size: 2vw;
+               ;
+            }
+            button{
+               padding:1vw;
+                
+            }
+            button:hover{
+                color:red;
+                cursor: pointer;
+                
+            }
+     </style>
+ </head>
+ <body>
+ 
+             <h1>Stopwatch</h1>
+            <div class="wrapper">
+            
+            <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+            <button id="start-button">start</button>
+            <button id="stop-button">stop</button>
+            <button id="reset-button">reset</button>
+          </div>
+ </body>
+ <script src="stopwatch.js"></script>
+ </html>

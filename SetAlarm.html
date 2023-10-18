@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Alarm Clock</title>
+    <style>
+                *{
+                    box-sizing:border-box;
+                    margin: 0;
+                    padding:0;
+                }
+
+                section{
+                     /* border:2px solid green; */
+                     display: flex;
+                     flex-direction: row;
+                     justify-content: center;
+                     align-items: center;
+                      width: 100%;
+                      padding:2vw;
+                      height:100vh;
+                      background-image:url(images/setAlarmbc2.webp);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                }
+                main{
+                      /* border:3px solid red; */
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: flex-end;
+                      align-items: flex-end;
+                      width: 100%;
+                      padding:1vw;
+                      gap:0.3vw;
+                      
+                }
+                div{
+                    /* border:2px solid green; */
+                    padding: 1vw;
+                    font-size: 3vw;
+                    width:6vw;
+                    height:5vw;
+                    color:blueviolet;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+                p{
+                    /* border:2px solid green; */
+                    padding: 1vw;
+                    font-size: 3vw;
+                    width:3vw;
+                    height:4vw;
+                    color:blueviolet;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+
+                button{
+                      background-color: black;
+                      width:6vw;
+                      height:5vw;
+                      font-size: 2vw;
+                      color:white;
+                      border-radius: 50%;
+
+                }
+            
+                 
+    </style>
+    
+</head>
+<body>
+       <section>
+        <main>
+            <div class="hour" contenteditable="true">00</div><p>:</p>
+            <div class="minute" contenteditable="true">00</div><p>:</p>
+            <div contenteditable="true">Am</div>
+            <button>Set</button>
+            <audio controls autoplay style="visibility: hidden;"></audio>
+        </main>
+       </section>
+
+       <script src="SetAlarm.js"></script>
+</body>
+</html>
