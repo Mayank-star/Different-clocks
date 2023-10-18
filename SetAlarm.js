@@ -41,12 +41,23 @@ console.log(audiodref);
             
             // console.log("hello");
 
-             if(hourstext==value1 && minutestext==value2 && slottext==value3){
-                   audiodref.innerHTML='<source src="ringtone/tone2.mp3" >';
-                  //  console.log("done");
-                  clearInterval(id);
-                  
+            if(hourstext.split("")[0]!=0){
+               if(hourstext==value1 && minutestext==value2 && slottext==value3){
+                      audiodref.innerHTML='<source src="ringtone/tone2.mp3" >';
+                     //  console.log("done");
+                     clearInterval(id);
+                     
+                }
              }
+             else{
+                  if(hourstext.split("")[1]==value1 && minutestext==value2 && slottext==value3){
+                       audiodref.innerHTML='<source src="ringtone/tone2.mp3" >';
+                      //  console.log("done");
+                      clearInterval(id);
+                      
+                 }
+   
+             }   
               
 
       },1000)
